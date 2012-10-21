@@ -1,0 +1,5 @@
+ios/
+*.a
+*.dll
+bin/
+obj/
