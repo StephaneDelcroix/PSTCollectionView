@@ -46,30 +46,44 @@ namespace PSTCollectionView {
 			RegisterClassForCell (Class.GetHandle (cellType), reuseIdentifier);
 		}		
 
-//		public void RegisterClassForSupplementaryView (Type cellType, PSTCollectionElementKindSection section, NSString reuseIdentifier)
-//		{
-//			if (cellType == null)
-//				throw new ArgumentNullException ("cellType");
-//
-//			NSString kind;
-//			if (section != PSTCollectionElementKindSection.Header)
-//			{
-//				if (section != PSTCollectionElementKindSection.Footer)
-//					throw new ArgumentOutOfRangeException ("section");
-//				kind = PSTCollectionElementKindSectionKey.Footer;
-//			}
-//			else
-//				kind = PSTCollectionElementKindSectionKey.Header;
-//			this.RegisterClassForSupplementaryView (Class.GetHandle (cellType), kind, reuseIdentifier);
-//		}
-//	}
-
-		public void RegisterClassForSupplementaryView (Type cellType, NSString kind, NSString reuseIdentifier)
+		public void RegisterClassForSupplementaryView (Type cellType, PSTCollectionElementKindSection section, NSString reuseIdentifier)
 		{
 			if (cellType == null)
 				throw new ArgumentNullException ("cellType");
 
+			NSString kind;
+			if (section != PSTCollectionElementKindSection.Header)
+			{
+				if (section != PSTCollectionElementKindSection.Footer)
+					throw new ArgumentOutOfRangeException ("section");
+				kind = PSTCollectionElementKindSectionKey.Footer;
+			}
+			else
+				kind = PSTCollectionElementKindSectionKey.Header;
 			this.RegisterClassForSupplementaryView (Class.GetHandle (cellType), kind, reuseIdentifier);
+		}
+	}
+
+	public partial class PSTCollectionViewLayout {
+		//temp hack
+
+		static readonly IntPtr selLayoutAttributesForElementsInRect_ = Selector.GetHandle ("layoutAttributesForElementsInRect:");
+
+		[Export ("layoutAttributesForElementsInRect:")]
+		public virtual PSTCollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (System.Drawing.RectangleF rect)
+		{
+			if (IsDirectBinding) {
+				return NSArray.ArrayFromHandle<PSTCollectionViewLayoutAttributes>(MonoTouch.ObjCRuntime.Messaging.IntPtr_objc_msgSend_RectangleF (this.Handle, selLayoutAttributesForElementsInRect_, rect));
+			} else {
+				return NSArray.ArrayFromHandle<PSTCollectionViewLayoutAttributes>(MonoTouch.ObjCRuntime.Messaging.IntPtr_objc_msgSendSuper_RectangleF (this.SuperHandle, selLayoutAttributesForElementsInRect_, rect));
+			}
+		}
+
+		public void RegisterClassForDecorationView(Type cellType, NSString reuseIdentifier) {
+			if (cellType == null)
+				throw new ArgumentNullException ("cellType");
+
+			this.RegisterClassForDecorationView(Class.GetHandle (cellType), reuseIdentifier);
 		}
 	}
 

@@ -27,17 +27,15 @@
 //
 
 using System;
+using System.Drawing;
+
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.CoreGraphics;
-using System.Drawing;
+using MonoTouch.CoreAnimation;
 
 namespace PSTCollectionView {
-	[BaseType (typeof (PSTCollectionViewFlowLayout))]
-	interface PSUICollectionViewFlowLayout {
-	}
-
 	[BaseType (typeof (PSTCollectionViewLayout))]
 	interface PSTCollectionViewFlowLayout {
 		[Export ("minimumLineSpacing")]
@@ -61,13 +59,83 @@ namespace PSTCollectionView {
 		[Export ("sectionInset")]
 		UIEdgeInsets SectionInset { get; set; }
 		
+		[Export ("scrollDirection")]
+		PSTCollectionViewScrollDirection ScrollDirection { get; set; }
+			
+	}
+	
+	[Static]
+	interface PSTCollectionElementKindSectionKey {
+		[Field("PSTCollectionElementKindSectionHeader", "__Internal")]
+		[Static]
+		NSString Header { get;}
+
+		[Field("PSTCollectionElementKindSectionFooter", "__Internal")]
+		[Static]
+		NSString Footer { get;}
+	}
+
+	[BaseType (typeof (NSObject))]
+	interface PSTCollectionViewLayoutAttributes {
+		[Export ("elementKind")]
+		string ElementKind { get; set; }
+
+		[Export ("reuseIdentifier")]
+		string ReuseIdentifier { get; set; }
+
+		[Export ("frame")]
+		RectangleF Frame { get; set; }
+
+		[Export ("center")]
+		PointF Center { get; set; }
+
+		[Export ("size")]
+		SizeF Size { get; set; }
+
+		[Export ("transform3D")]
+		CATransform3D Transform3D { get; set; }
+
+		[Export ("alpha")]
+		float Alpha { get; set; }
+
+		[Export ("zIndex")]
+		int ZIndex { get; set; }
 		
+		[Export ("layoutAttributesForCellWithIndexPath:")]
+		[Static]
+		PSTCollectionViewLayoutAttributes CreateForCell (NSIndexPath indexPath);
 	}
 
 	[BaseType (typeof (NSObject))]
 	interface PSTCollectionViewLayout {
 		[Export ("collectionView")]
 		PSTCollectionView CollectionView { get; set; }
+
+		[Export ("invalidateLayout")]
+		void InvalidateLayout ();
+
+		[Export ("prepareLayout")]
+		void PrepareLayout();
+
+
+		[Export ("collectionViewContentSize")]
+		SizeF CollectionViewContentSize { get; }
+
+		[Export ("layoutAttributesForItemAtIndexPath:")]
+		PSTCollectionViewLayoutAttributes LayoutAttributesForItem (NSIndexPath indexPath);
+
+		//[Export ("layoutAttributesForElementsInRect:")]
+		//Attributes [] LayoutAttributesForElementsInRect(RectangleF rect);
+
+		[Export ("registerClass:forDecorationViewWithReuseIdentifier:")]
+		[Internal]
+		void RegisterClassForDecorationView(IntPtr cellClass, NSString reuseIdentifier);
+
+		[Export ("shouldInvalidateLayoutForBoundsChange:")]
+		bool ShouldInvalidateLayoutForBoundsChange(RectangleF newBounds);
+
+		[Export ("targetContentOffsetForProposedContentOffset:withScrollingVelocity:")]
+		PointF TargetContentOffset (PointF proposedContentOffset, PointF scrollingVelocity);
 	}
 
 	[BaseType (typeof (UIScrollView))]
@@ -112,6 +180,13 @@ namespace PSTCollectionView {
 		
 		[Export ("cellForItemAtIndexPath:")]
 		PSTCollectionViewCell CellForItem (NSIndexPath indexPath);
+
+		[Export ("numberOfSections")]
+		int NumberOfSections { get; set; }
+
+		[Export ("numberOfItemsInSection:")]
+		int NumberOfItemsInSection (int section);
+		
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -127,6 +202,7 @@ namespace PSTCollectionView {
 
 		[Export ("numberOfSectionsInCollectionView:")]
 		int NumberOfSections (PSTCollectionView collectionView);
+
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -259,12 +335,5 @@ namespace PSTCollectionView {
 		UIView SelectedBackgroundView { get; set; }
 	}
 
-	[BaseType (typeof (NSObject))]
-	interface PSTCollectionViewLayoutAttributes {
-		[Export ("elementKind")]
-		string ElementKind { get; set; }
 
-		[Export ("reuseIdentifier")]
-		string ReuseIdentifier { get; set; }
-	}
 }

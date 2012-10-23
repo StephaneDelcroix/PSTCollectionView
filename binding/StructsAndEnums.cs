@@ -31,6 +31,11 @@ namespace PSTCollectionView {
 		Header,
 		Footer,
 	}
+
+	public enum PSTCollectionViewScrollDirection {
+		Vertical,
+		Horizontal,
+	}
 }
 
 
