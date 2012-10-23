@@ -31,7 +31,6 @@ namespace SimpleCollectionView
 
 			CollectionView.RegisterClassForCell (typeof(AnimalCell), animalCellId);
 			CollectionView.RegisterClassForSupplementaryView(typeof(Header), PSTCollectionElementKindSection.Header, headerId);
-			//CollectionView.RegisterClassForSupplementaryView (typeof(Header), PSTCollectionElementKindSection.Header, headerId);
 		}
 
 		public override int NumberOfSections (PSTCollectionView.PSTCollectionView collectionView)

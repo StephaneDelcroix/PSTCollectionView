@@ -23,14 +23,14 @@ namespace SimpleCollectionView
 			RegisterClassForDecorationView (typeof(MyDecorationView), myDecorationViewId);
 		}
 
-//		public override UICollectionViewLayoutAttributes LayoutAttributesForDecorationView (string decorationViewKind, NSIndexPath indexPath)
-//		{
-//			var attribs = UICollectionViewLayoutAttributes.CreateForDecorationView (decorationViewKind, indexPath);
-//			attribs.Frame = new RectangleF(0,0, 400, 800);
-//			attribs.ZIndex = -1;
-//
-//			return attribs;
-//		}
+		//public override PSTCollectionViewLayoutAttributes LayoutAttributesForDecorationView (string decorationViewKind, NSIndexPath indexPath)
+		//{
+		//	var attribs = PSTCollectionViewLayoutAttributes.CreateForDecorationView (decorationViewKind, indexPath);
+		//	attribs.Frame = new RectangleF(0,0, 400, 800);
+		//	attribs.ZIndex = -1;
+		//
+		//	return attribs;
+		//}
 
 		public override void PrepareLayout ()
 		{
@@ -54,24 +54,18 @@ namespace SimpleCollectionView
 			attributes.Size = new SizeF (ItemSize, ItemSize);
 			attributes.Center = new PointF (center.X + radius * (float)Math.Cos (2 * path.Row * Math.PI / cellCount),
 			                                center.Y + radius * (float)Math.Sin (2 * path.Row * Math.PI / cellCount));
+			Console.WriteLine(attributes.Center);
 			return attributes;
 		}
 
 		public override PSTCollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (RectangleF rect)
 		{
-			var attributes = new PSTCollectionViewLayoutAttributes [cellCount + 1];
+			var attributes = new PSTCollectionViewLayoutAttributes [cellCount];
 
 			for (int i = 0; i < cellCount; i++) {
 				NSIndexPath indexPath = NSIndexPath.FromItemSection (i, 0);
 				attributes [i] = LayoutAttributesForItem (indexPath);
 			}
-
-            //var decorationAttribs = PSTCollectionViewLayoutAttributes.CreateForDecorationView (myDecorationViewId, NSIndexPath.FromItemSection (0, 0));
-			//decorationAttribs.Size = rect.Size;
-			//decorationAttribs.Center = CollectionView.Center;
-			//decorationAttribs.ZIndex = -1;
-			//attributes [cellCount] = decorationAttribs;
-
 			return attributes;
 		}
 

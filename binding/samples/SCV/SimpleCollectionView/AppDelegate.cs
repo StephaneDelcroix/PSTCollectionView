@@ -32,13 +32,13 @@ namespace SimpleCollectionView
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			// use UICollectionViewFlowLayout
-			var layout = new PSTCollectionViewFlowLayout (){
-				HeaderReferenceSize = new System.Drawing.SizeF (50, 50),
-				SectionInset = new UIEdgeInsets (20,0,0,0)
-			};
+			//var layout = new PSTCollectionViewFlowLayout (){
+			//	HeaderReferenceSize = new System.Drawing.SizeF (50, 50),
+			//	SectionInset = new UIEdgeInsets (20,0,0,0)
+			//};
 
 			// use CircleLayout
-			//var layout = new CircleLayout ();
+			var layout = new CircleLayout ();
 
 			// use LineLayout
 			//var layout = new LineLayout (){
