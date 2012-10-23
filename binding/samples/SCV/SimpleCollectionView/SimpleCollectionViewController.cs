@@ -22,15 +22,17 @@ namespace SimpleCollectionView
 				animals.Add (new Monkey ());
 			}
 
-//			CollectionView.ContentInset = new UIEdgeInsets (20, 20, 20, 20);
+
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 
+			CollectionView.ContentInset = new UIEdgeInsets (20, 20, 20, 20);
 			CollectionView.RegisterClassForCell (typeof(AnimalCell), animalCellId);
 			CollectionView.RegisterClassForSupplementaryView(typeof(Header), PSTCollectionElementKindSection.Header, headerId);
+			CollectionView.BackgroundColor = UIColor.ScrollViewTexturedBackgroundColor;
 		}
 
 		public override int NumberOfSections (PSTCollectionView.PSTCollectionView collectionView)
