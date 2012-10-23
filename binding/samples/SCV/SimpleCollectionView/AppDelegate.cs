@@ -38,12 +38,12 @@ namespace SimpleCollectionView
 			};
 
 			// use CircleLayout
-//			var layout = new CircleLayout ();
+			//var layout = new CircleLayout ();
 
 			// use LineLayout
-//			var layout = new LineLayout (){
-//				HeaderReferenceSize = new System.Drawing.SizeF (250, 50)
-//			};
+			//var layout = new LineLayout (){
+			//	HeaderReferenceSize = new System.Drawing.SizeF (250, 50)
+			//};
 		
 			simpleCollectionViewController = new SimpleCollectionViewController (layout);
 

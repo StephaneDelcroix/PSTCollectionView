@@ -5,9 +5,11 @@ using MonoTouch.UIKit;
 using MonoTouch.CoreGraphics;
 using MonoTouch.CoreAnimation;
 
+using PSTCollectionView;
+
 namespace SimpleCollectionView
 {
-	public class LineLayout : UICollectionViewFlowLayout
+	public class LineLayout : PSTCollectionViewFlowLayout
 	{
 		public const float ITEM_SIZE = 200.0f;
 		public const int ACTIVE_DISTANCE = 200;
@@ -16,7 +18,7 @@ namespace SimpleCollectionView
 		public LineLayout ()
 		{	
 			ItemSize = new SizeF (ITEM_SIZE, ITEM_SIZE);
-			ScrollDirection = UICollectionViewScrollDirection.Horizontal;
+			ScrollDirection = PSTCollectionViewScrollDirection.Horizontal;
 			SectionInset = new UIEdgeInsets (200, 0.0f, 200, 0.0f);
 			MinimumLineSpacing = 50.0f;		
 		}
@@ -26,7 +28,7 @@ namespace SimpleCollectionView
 			return true;
 		}
 		
-		public override UICollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (RectangleF rect)
+		public override PSTCollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (RectangleF rect)
 		{
 			var array = base.LayoutAttributesForElementsInRect (rect);
 			var visibleRect = new RectangleF (CollectionView.ContentOffset, CollectionView.Bounds.Size);

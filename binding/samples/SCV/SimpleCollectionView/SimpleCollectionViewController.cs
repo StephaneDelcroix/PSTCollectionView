@@ -30,7 +30,7 @@ namespace SimpleCollectionView
 			base.ViewDidLoad ();
 
 			CollectionView.RegisterClassForCell (typeof(AnimalCell), animalCellId);
-			CollectionView.RegisterClassForSupplementaryView(typeof(Header), new NSString("UICollectionElementKindSectionHeader"), headerId);
+			CollectionView.RegisterClassForSupplementaryView(typeof(Header), PSTCollectionElementKindSection.Header, headerId);
 			//CollectionView.RegisterClassForSupplementaryView (typeof(Header), PSTCollectionElementKindSection.Header, headerId);
 		}
 

@@ -5,9 +5,11 @@ using MonoTouch.Foundation;
 using MonoTouch.CoreAnimation;
 using MonoTouch.UIKit;
 
+using PSTCollectionView;
+
 namespace SimpleCollectionView
 {
-	public class CircleLayout : UICollectionViewLayout
+	public class CircleLayout : PSTCollectionViewLayout
 	{
 		const float ItemSize = 70.0f;
 		int cellCount = 20;
@@ -46,36 +48,36 @@ namespace SimpleCollectionView
 			}
 		}
 
-		public override UICollectionViewLayoutAttributes LayoutAttributesForItem (NSIndexPath path)
+		public override PSTCollectionViewLayoutAttributes LayoutAttributesForItem (NSIndexPath path)
 		{
-			UICollectionViewLayoutAttributes attributes = UICollectionViewLayoutAttributes.CreateForCell (path);
+			PSTCollectionViewLayoutAttributes attributes = PSTCollectionViewLayoutAttributes.CreateForCell (path);
 			attributes.Size = new SizeF (ItemSize, ItemSize);
 			attributes.Center = new PointF (center.X + radius * (float)Math.Cos (2 * path.Row * Math.PI / cellCount),
 			                                center.Y + radius * (float)Math.Sin (2 * path.Row * Math.PI / cellCount));
 			return attributes;
 		}
 
-		public override UICollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (RectangleF rect)
+		public override PSTCollectionViewLayoutAttributes[] LayoutAttributesForElementsInRect (RectangleF rect)
 		{
-			var attributes = new UICollectionViewLayoutAttributes [cellCount + 1];
+			var attributes = new PSTCollectionViewLayoutAttributes [cellCount + 1];
 
 			for (int i = 0; i < cellCount; i++) {
 				NSIndexPath indexPath = NSIndexPath.FromItemSection (i, 0);
 				attributes [i] = LayoutAttributesForItem (indexPath);
 			}
 
-            var decorationAttribs = UICollectionViewLayoutAttributes.CreateForDecorationView (myDecorationViewId, NSIndexPath.FromItemSection (0, 0));
-			decorationAttribs.Size = rect.Size;
-			decorationAttribs.Center = CollectionView.Center;
-			decorationAttribs.ZIndex = -1;
-			attributes [cellCount] = decorationAttribs;
+            //var decorationAttribs = PSTCollectionViewLayoutAttributes.CreateForDecorationView (myDecorationViewId, NSIndexPath.FromItemSection (0, 0));
+			//decorationAttribs.Size = rect.Size;
+			//decorationAttribs.Center = CollectionView.Center;
+			//decorationAttribs.ZIndex = -1;
+			//attributes [cellCount] = decorationAttribs;
 
 			return attributes;
 		}
 
 	}
 	
-	public class MyDecorationView : UICollectionReusableView
+	public class MyDecorationView : PSTCollectionReusableView
 	{
 		[Export ("initWithFrame:")]
 		public MyDecorationView (System.Drawing.RectangleF frame) : base (frame)
