@@ -125,7 +125,7 @@ namespace PSTCollectionView {
 		PSTCollectionViewLayoutAttributes LayoutAttributesForItem (NSIndexPath indexPath);
 
 		//[Export ("layoutAttributesForElementsInRect:")]
-		//Attributes [] LayoutAttributesForElementsInRect(RectangleF rect);
+		//PSTCollectionViewLayoutAttributes [] LayoutAttributesForElementsInRect(RectangleF rect);
 
 		[Export ("registerClass:forDecorationViewWithReuseIdentifier:")]
 		[Internal]
@@ -136,6 +136,12 @@ namespace PSTCollectionView {
 
 		[Export ("targetContentOffsetForProposedContentOffset:withScrollingVelocity:")]
 		PointF TargetContentOffset (PointF proposedContentOffset, PointF scrollingVelocity);
+
+		[Export ("initialLayoutAttributesForInsertedItemAtIndexPath:")]
+		PSTCollectionViewLayoutAttributes InitialLayoutAttributesForInsertedItem (NSIndexPath indexPath);	
+
+		[Export ("finalLayoutAttributesForDeletedItemAtIndexPath:")]
+		PSTCollectionViewLayoutAttributes FinalLayoutAttributesForDeletedItem (NSIndexPath itemIndexPath);
 	}
 
 	[BaseType (typeof (UIScrollView))]
