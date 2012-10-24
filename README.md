@@ -1,3 +1,5 @@
+Note: if you're looking for the monotouch bindings, check the monotouch branch.
+
 PSTCollectionView
 =================
 
