@@ -211,9 +211,9 @@ namespace PSTCollectionView {
 
 	}
 
-	[BaseType (typeof (NSObject))]
+	[BaseType (typeof (PSTCollectionViewDelegate))]
 	[Model]
-	interface PSTCollectionViewDelegate {
+	interface PSTCollectionViewDelegateFlowLayout {
 		[Export ("collectionView:layout:sizeForItemAtIndexPath:")]
 		SizeF GetSizeForItem (PSTCollectionView collectionView, PSTCollectionViewLayout layout, NSIndexPath indexPath);
 
@@ -222,22 +222,31 @@ namespace PSTCollectionView {
 
 		[Export ("collectionView:layout:minimumLineSpacingForSectionAtIndex:")]
 		float GetMinimumLineSpacingForSection (UICollectionView collectionView, UICollectionViewLayout layout, int section);
-
+		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
+		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, NSString elementKind, NSIndexPath indexPath);
 	}
+		
+	[BaseType (typeof (NSObject))]
+	[Model]
+	interface PSTCollectionViewDelegate {
+		[Export ("collectionView:didHighlightItemAtIndexPath:")]
+		void ItemHighlighted (PSTCollectionView collectionView, NSIndexPath indexPath);
+		
+		[Export ("collectionView:didUnhighlightItemAtIndexPath:")]
+		void ItemUnhighlighted (PSTCollectionView collectionView, NSIndexPath indexPath);
 
-//	[BaseType (typeof (PSTCollectionViewDelegate))]
-//	interface PSTCollectionViewDelegateFlowLayout {
-//		[Export ("collectionView:layout:sizeForItemAtIndexPath:")]
-//		SizeF GetSizeForItem (PSTCollectionView collectionView, PSTCollectionViewLayout layout, NSIndexPath indexPath);
-//
-//		[Export ("collectionView:layout:minimumInteritemSpacingForSectionAtIndex:")]
-//		float GetMinimumInteritemSpacingForSection (UICollectionView collectionView, UICollectionViewLayout layout, int section);
-//
-//		[Export ("collectionView:layout:minimumLineSpacingForSectionAtIndex:")]
-//		float GetMinimumLineSpacingForSection (UICollectionView collectionView, UICollectionViewLayout layout, int section);
-//
-//
-//	}
+		[Export ("collectionView:shouldHighlightItemAtIndexPath:")]
+		bool ShouldHighlightItem (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:shouldShowMenuForItemAtIndexPath:")]
+		bool ShouldShowMenu (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:canPerformAction:forItemAtIndexPAth:withSender:")]
+		bool CanPerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
+
+		[Export ("collectionView:performAction:forItemAtIndexPAth:withSender:")]
+		void PerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
+	}
 
 	[BaseType (typeof (UIViewController))]
 	interface PSTCollectionViewController {
