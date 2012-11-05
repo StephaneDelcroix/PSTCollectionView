@@ -2249,3 +2249,16 @@ __attribute__((constructor)) static void PSTCheckIfIVarLayoutIsEqualSize(void) {
     }
 }
 #endif
+
+@implementation NSDictionary(PSSubscriptingSupport)
+	- (id)objectForKeyedSubscript:(id)key {return [self objectForKey:key];}
+@end
+@implementation NSMutableDictionary(PSSubscriptingSupport)
+	- (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key {[self setObject:obj forKey:key];}
+@end
+@implementation NSArray(PSSubscriptingSupport)
+	- (id)objectAtIndexedSubscript:(NSUInteger)idx {return [self objectAtIndex:idx];}
+@end
+@implementation NSMutableArray(PSSubscriptingSupport)
+	- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx {[self replaceObjectAtIndex:idx withObject:obj];}
+@end
