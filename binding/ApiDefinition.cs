@@ -166,6 +166,9 @@ namespace PSTCollectionView {
 		[Wrap ("WeakDataSource")]
 		PSTCollectionViewDataSource DataSource { get; set; }
 
+		[Export("reloadData")]
+		void ReloadData();
+
 		[Export ("dataSource", ArgumentSemantic.Assign)]
 		[NullAllowed]
 		NSObject WeakDataSource { get; set; }
