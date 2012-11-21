@@ -98,6 +98,9 @@ namespace PSTCollectionView {
 		[Export ("alpha")]
 		float Alpha { get; set; }
 
+		[Export ("indexPath")]
+		NSIndexPath IndexPath { get; set; } 
+
 		[Export ("zIndex")]
 		int ZIndex { get; set; }
 		
