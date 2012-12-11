@@ -235,11 +235,20 @@ namespace PSTCollectionView {
 	[BaseType (typeof (NSObject))]
 	[Model]
 	interface PSTCollectionViewDelegate {
+		[Export ("scrollViewDidEndDecelerating:")]
+		void DecelerationEnded(UIScrollView scrollView);
+
+		[Export ("scrollViewWillBeginDecelerating:")]
+		void DecelerationStarted(UIScrollView scrollview);
+		
 		[Export ("collectionView:didHighlightItemAtIndexPath:")]
 		void ItemHighlighted (PSTCollectionView collectionView, NSIndexPath indexPath);
 		
 		[Export ("collectionView:didUnhighlightItemAtIndexPath:")]
 		void ItemUnhighlighted (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:performAction:forItemAtIndexPAth:withSender:")]
+		void PerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
 
 		[Export ("collectionView:shouldHighlightItemAtIndexPath:")]
 		bool ShouldHighlightItem (PSTCollectionView collectionView, NSIndexPath indexPath);
@@ -249,9 +258,6 @@ namespace PSTCollectionView {
 
 		[Export ("collectionView:canPerformAction:forItemAtIndexPAth:withSender:")]
 		bool CanPerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
-
-		[Export ("collectionView:performAction:forItemAtIndexPAth:withSender:")]
-		void PerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
 	}
 
 	[BaseType (typeof (UIViewController))]
