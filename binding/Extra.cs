@@ -79,12 +79,12 @@ namespace PSTCollectionView {
 			}
 		}
 
-		public void RegisterClassForDecorationView(Type cellType, NSString reuseIdentifier) {
-			if (cellType == null)
-				throw new ArgumentNullException ("cellType");
+		//public void RegisterClassForDecorationView(Type cellType, NSString reuseIdentifier) {
+		//	if (cellType == null)
+		//		throw new ArgumentNullException ("cellType");
 
-			this.RegisterClassForDecorationView(Class.GetHandle (cellType), reuseIdentifier);
-		}
+		//	this.RegisterClassForDecorationView(Class.GetHandle (cellType), reuseIdentifier);
+		//}
 	}
 
 	public partial class PSTCollectionReusableView {

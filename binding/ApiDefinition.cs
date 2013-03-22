@@ -130,21 +130,17 @@ namespace PSTCollectionView {
 		//[Export ("layoutAttributesForElementsInRect:")]
 		//PSTCollectionViewLayoutAttributes [] LayoutAttributesForElementsInRect(RectangleF rect);
 
-		[Export ("registerClass:forDecorationViewWithReuseIdentifier:")]
-		[Internal]
-		void RegisterClassForDecorationView(IntPtr cellClass, NSString reuseIdentifier);
-
 		[Export ("shouldInvalidateLayoutForBoundsChange:")]
 		bool ShouldInvalidateLayoutForBoundsChange(RectangleF newBounds);
 
 		[Export ("targetContentOffsetForProposedContentOffset:withScrollingVelocity:")]
 		PointF TargetContentOffset (PointF proposedContentOffset, PointF scrollingVelocity);
 
-		[Export ("initialLayoutAttributesForInsertedItemAtIndexPath:")]
-		PSTCollectionViewLayoutAttributes InitialLayoutAttributesForInsertedItem (NSIndexPath indexPath);	
+		//[Export ("initialLayoutAttributesForInsertedItemAtIndexPath:")]
+		//PSTCollectionViewLayoutAttributes InitialLayoutAttributesForInsertedItem (NSIndexPath indexPath);	
 
-		[Export ("finalLayoutAttributesForDeletedItemAtIndexPath:")]
-		PSTCollectionViewLayoutAttributes FinalLayoutAttributesForDeletedItem (NSIndexPath itemIndexPath);
+		//[Export ("finalLayoutAttributesForDeletedItemAtIndexPath:")]
+		//PSTCollectionViewLayoutAttributes FinalLayoutAttributesForDeletedItem (NSIndexPath itemIndexPath);
 	}
 
 	[BaseType (typeof (UIScrollView))]
@@ -194,7 +190,7 @@ namespace PSTCollectionView {
 		PSTCollectionViewCell CellForItem (NSIndexPath indexPath);
 
 		[Export ("numberOfSections")]
-		int NumberOfSections { get; set; }
+		int NumberOfSections { get; }
 
 		[Export ("numberOfItemsInSection:")]
 		int NumberOfItemsInSection (int section);
@@ -311,15 +307,6 @@ namespace PSTCollectionView {
 
 		[Export ("collectionView:performAction:forItemAtIndexPAth:withSender:")]
 		void PerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
-		
-		
-
-
-		
-		
-
-			
-	
 	}
 
 	[BaseType (typeof (PSTCollectionViewController))]
@@ -329,7 +316,7 @@ namespace PSTCollectionView {
 	[BaseType (typeof (UIView))]
 	interface PSTCollectionReusableView {
 		[Export ("reuseIdentifier")]
-		string ReuseIdentifier { get; }
+		string ReuseIdentifier { get; set; }
 
 		[Export ("prepareForReuse")]
 		void PrepareForReuse ();
@@ -337,7 +324,7 @@ namespace PSTCollectionView {
 		[Export ("applyLayoutAttributes:")]
 		void ApplyLayoutAttributes (PSTCollectionViewLayoutAttributes layoutAttributes);
 
-		[Export ("willTransitionFormLayout:toLayout:")]
+		[Export ("willTransitionFromLayout:toLayout:")]
 		void WillTransition(PSTCollectionViewLayout fromLayout, PSTCollectionViewLayout toLayout);
 
 		[Export ("didTransitionFromLayout:toLayout:")]
@@ -350,15 +337,15 @@ namespace PSTCollectionView {
 		UIView ContentView { get; }
 
 		[Export ("isSelected")]
-		bool IsSelected { get;[Bind ("selected:")] set; }
+		bool IsSelected { get;[Bind ("setSelected:")] set; }
 
 		[Export ("isHighlighted")]
-		bool IsHighlighted { get; [Bind ("highlighted:")]set; }
+		bool IsHighlighted { get; [Bind ("setHighlighted:")]set; }
 
 		[Export ("backgroundView")]
 		UIView BackgroundView { get; set; }
 
-		[Export ("SelectedBackgroundView")]
+		[Export ("selectedBackgroundView")]
 		UIView SelectedBackgroundView { get; set; }
 	}
 
