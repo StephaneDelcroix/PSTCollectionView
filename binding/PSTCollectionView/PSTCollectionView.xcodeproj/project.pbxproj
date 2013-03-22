@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E1E89D316FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E89CF16FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.m */; };
-		2E1E89D416FC68E600537825 /* PSTCollectionViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E89D216FC68E600537825 /* PSTCollectionViewUpdateItem.m */; };
+		2E1E89DA16FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E89D616FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.m */; };
+		2E1E89DB16FC6A9100537825 /* PSTCollectionViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E89D916FC6A9100537825 /* PSTCollectionViewUpdateItem.m */; };
 		2E982C651631EDBA00EE82AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E982C641631EDBA00EE82AA /* Foundation.framework */; };
 		2E982C731631EDFC00EE82AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E982C721631EDFC00EE82AA /* UIKit.framework */; };
 		2E982C751631EE0300EE82AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E982C741631EE0300EE82AA /* QuartzCore.framework */; };
@@ -39,11 +39,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E1E89CE16FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSIndexPath+PSTCollectionViewAdditions.h"; path = "../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.h"; sourceTree = "<group>"; };
-		2E1E89CF16FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSIndexPath+PSTCollectionViewAdditions.m"; path = "../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m"; sourceTree = "<group>"; };
-		2E1E89D016FC68E600537825 /* PSTCollectionViewLayout+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PSTCollectionViewLayout+Internals.h"; path = "../../../PSTCollectionView/PSTCollectionViewLayout+Internals.h"; sourceTree = "<group>"; };
-		2E1E89D116FC68E600537825 /* PSTCollectionViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTCollectionViewUpdateItem.h; path = ../../../PSTCollectionView/PSTCollectionViewUpdateItem.h; sourceTree = "<group>"; };
-		2E1E89D216FC68E600537825 /* PSTCollectionViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTCollectionViewUpdateItem.m; path = ../../../PSTCollectionView/PSTCollectionViewUpdateItem.m; sourceTree = "<group>"; };
+		2E1E89D516FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSIndexPath+PSTCollectionViewAdditions.h"; path = "../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.h"; sourceTree = "<group>"; };
+		2E1E89D616FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSIndexPath+PSTCollectionViewAdditions.m"; path = "../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m"; sourceTree = "<group>"; };
+		2E1E89D716FC6A9100537825 /* PSTCollectionViewLayout+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PSTCollectionViewLayout+Internals.h"; path = "../../../PSTCollectionView/PSTCollectionViewLayout+Internals.h"; sourceTree = "<group>"; };
+		2E1E89D816FC6A9100537825 /* PSTCollectionViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTCollectionViewUpdateItem.h; path = ../../../PSTCollectionView/PSTCollectionViewUpdateItem.h; sourceTree = "<group>"; };
+		2E1E89D916FC6A9100537825 /* PSTCollectionViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTCollectionViewUpdateItem.m; path = ../../../PSTCollectionView/PSTCollectionViewUpdateItem.m; sourceTree = "<group>"; };
 		2E982C611631EDBA00EE82AA /* libPSTCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPSTCollectionView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E982C641631EDBA00EE82AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E982C681631EDBA00EE82AA /* PSTCollectionView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSTCollectionView-Prefix.pch"; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 		2E982C661631EDBA00EE82AA /* PSTCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				2E1E89CE16FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.h */,
-				2E1E89CF16FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.m */,
-				2E1E89D016FC68E600537825 /* PSTCollectionViewLayout+Internals.h */,
-				2E1E89D116FC68E600537825 /* PSTCollectionViewUpdateItem.h */,
-				2E1E89D216FC68E600537825 /* PSTCollectionViewUpdateItem.m */,
+				2E1E89D516FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.h */,
+				2E1E89D616FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.m */,
+				2E1E89D716FC6A9100537825 /* PSTCollectionViewLayout+Internals.h */,
+				2E1E89D816FC6A9100537825 /* PSTCollectionViewUpdateItem.h */,
+				2E1E89D916FC6A9100537825 /* PSTCollectionViewUpdateItem.m */,
 				2E982C761631EE3500EE82AA /* PSTCollectionView.h */,
 				2E982C771631EE3500EE82AA /* PSTCollectionView.m */,
 				2E982C781631EE3500EE82AA /* PSTCollectionViewCell.h */,
@@ -223,8 +223,8 @@
 				2E982C951631EE3500EE82AA /* PSTGridLayoutItem.m in Sources */,
 				2E982C961631EE3500EE82AA /* PSTGridLayoutRow.m in Sources */,
 				2E982C971631EE3500EE82AA /* PSTGridLayoutSection.m in Sources */,
-				2E1E89D316FC68E600537825 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
-				2E1E89D416FC68E600537825 /* PSTCollectionViewUpdateItem.m in Sources */,
+				2E1E89DA16FC6A9100537825 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
+				2E1E89DB16FC6A9100537825 /* PSTCollectionViewUpdateItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
