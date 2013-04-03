@@ -10,8 +10,8 @@ namespace SimpleCollectionView
 {
 	public class SimpleCollectionViewController : PSTCollectionViewController
 	{
-		static NSString animalCellId = new NSString ("AnimalCell");
-		static NSString headerId = new NSString ("Header");																			
+		static string animalCellId = "AnimalCell";
+		static string headerId = "Header";	
 
 		List<IAnimal> animals;
 
@@ -56,7 +56,7 @@ namespace SimpleCollectionView
 			return animalCell;
 		}
 
-		public override PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView.PSTCollectionView collectionView, NSString elementKind, NSIndexPath indexPath)
+		public override PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView.PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath)
 		{
 			var headerView = (Header)collectionView.DequeueReusableSupplementaryView (elementKind, headerId, indexPath);
 			headerView.Text = "This is a Supplementary View";

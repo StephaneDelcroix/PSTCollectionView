@@ -6,7 +6,7 @@
         <State expanded="True">
           <Node name="SimpleCollectionView" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="AppDelegate.cs" selected="True" />
+            <Node name="SimpleCollectionViewController.cs" selected="True" />
           </Node>
         </State>
       </Pad>

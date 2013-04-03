@@ -16,7 +16,7 @@ namespace SimpleCollectionView
 		float radius;
 		PointF center;
 
-		static NSString myDecorationViewId = new NSString ("MyDecorationView");
+		static string myDecorationViewId = "MyDecorationView";
 
 		public CircleLayout ()
 		{
