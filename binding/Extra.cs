@@ -39,19 +39,19 @@ namespace PSTCollectionView {
 	}
 
 	public partial class PSTCollectionView {
-		public void RegisterClassForCell (Type cellType, NSString reuseIdentifier)
+		public void RegisterClassForCell (Type cellType, string reuseIdentifier)
 		{
 			if (cellType == null)
 				throw new ArgumentNullException ("cellType");
 			RegisterClassForCell (Class.GetHandle (cellType), reuseIdentifier);
 		}		
 
-		public void RegisterClassForSupplementaryView (Type cellType, PSTCollectionElementKindSection section, NSString reuseIdentifier)
+		public void RegisterClassForSupplementaryView (Type cellType, PSTCollectionElementKindSection section, string reuseIdentifier)
 		{
 			if (cellType == null)
 				throw new ArgumentNullException ("cellType");
 
-			NSString kind;
+			string kind;
 			if (section != PSTCollectionElementKindSection.Header)
 			{
 				if (section != PSTCollectionElementKindSection.Footer)
@@ -79,7 +79,7 @@ namespace PSTCollectionView {
 			}
 		}
 
-		//public void RegisterClassForDecorationView(Type cellType, NSString reuseIdentifier) {
+		//public void RegisterClassForDecorationView(Type cellType, string reuseIdentifier) {
 		//	if (cellType == null)
 		//		throw new ArgumentNullException ("cellType");
 

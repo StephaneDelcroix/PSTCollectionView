@@ -156,11 +156,11 @@ namespace PSTCollectionView {
 
 		[Export ("registerClass:forCellWithReuseIdentifier:")]
 		//[Internal]
-		void RegisterClassForCell (IntPtr cellClass, NSString reuseIdentifier);
+		void RegisterClassForCell (IntPtr cellClass, string reuseIdentifier);
 
 		[Export ("registerClass:forSupplementaryViewOfKind:withReuseIdentifier:")]
 		[Internal]
-		void RegisterClassForSupplementaryView (IntPtr viewClass, NSString kind, NSString reuseIdentifier);
+		void RegisterClassForSupplementaryView (IntPtr viewClass, string kind, string reuseIdentifier);
 
 		[Wrap ("WeakDataSource")]
 		PSTCollectionViewDataSource DataSource { get; set; }
@@ -181,10 +181,10 @@ namespace PSTCollectionView {
 
 
 		[Export ("dequeueReusableCellWithReuseIdentifier:forIndexPath:")]
-		NSObject DequeueReusableCell (NSString reuseIdentifier, NSIndexPath indexPath);
+		NSObject DequeueReusableCell (string reuseIdentifier, NSIndexPath indexPath);
 
 		[Export ("dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:")]
-		NSObject DequeueReusableSupplementaryView(NSString kind, NSString reuseIdentifier, NSIndexPath indexPath);
+		NSObject DequeueReusableSupplementaryView(string kind, string reuseIdentifier, NSIndexPath indexPath);
 		
 		[Export ("cellForItemAtIndexPath:")]
 		PSTCollectionViewCell CellForItem (NSIndexPath indexPath);
@@ -225,7 +225,7 @@ namespace PSTCollectionView {
 		[Export ("collectionView:layout:minimumLineSpacingForSectionAtIndex:")]
 		float GetMinimumLineSpacingForSection (UICollectionView collectionView, UICollectionViewLayout layout, int section);
 		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
-		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, NSString elementKind, NSIndexPath indexPath);
+		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath);
 	}
 		
 	[BaseType (typeof (NSObject))]
@@ -288,7 +288,7 @@ namespace PSTCollectionView {
 	//	float GetMinimumLineSpacingForSection (PSTCollectionView collectionView, PSTCollectionViewLayout layout, int section);
 
 		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
-		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, NSString elementKind, NSIndexPath indexPath);
+		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath);
 		
 		[Export ("collectionView:didHighlightItemAtIndexPath:")]
 		void ItemHighlighted (PSTCollectionView collectionView, NSIndexPath indexPath);
