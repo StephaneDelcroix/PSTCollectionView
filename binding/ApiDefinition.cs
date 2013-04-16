@@ -158,6 +158,9 @@ namespace PSTCollectionView {
 		//[Internal]
 		void RegisterClassForCell (IntPtr cellClass, string reuseIdentifier);
 
+		[Export ("registerNib:forCellWithReuseIdentifier:")]
+		void RegisterNib (UINib nib, string reuseIdentifier);
+
 		[Export ("registerClass:forSupplementaryViewOfKind:withReuseIdentifier:")]
 		[Internal]
 		void RegisterClassForSupplementaryView (IntPtr viewClass, string kind, string reuseIdentifier);
@@ -254,6 +257,18 @@ namespace PSTCollectionView {
 
 		[Export ("collectionView:canPerformAction:forItemAtIndexPAth:withSender:")]
 		bool CanPerformAction (PSTCollectionView collectionView, Selector action, NSIndexPath indexPath, NSObject sender);
+
+		[Export ("collectionView:shouldSelectItemAtIndexPath:")]
+		bool ItemShouldSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:shouldDeselectItemAtIndexPath:")]
+		bool ItemShouldDeselectSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:didSelectItemAtIndexPath:")]
+		void ItemSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+
+		[Export ("collectionView:didDeselectItemAtIndexPath:")]
+		void ItemDeselected (PSTCollectionView collectionView, NSIndexPath indexPath);
 	}
 
 	[BaseType (typeof (UIViewController))]

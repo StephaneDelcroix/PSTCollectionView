@@ -1,0 +1,470 @@
+TPSTCollectionView
+v5
+r1
+cCheck dependencies
+cProcessPCH /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth PSTCollectionView/PSTCollectionView-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/libPSTCollectionView.a normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000051541D3A0000000000000110
+t1364467002
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005107D8640000000000322700
+t1359468644
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h
+c000000005107D86400000000000004FE
+t1359468644
+s1278
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005107D865000000000062AD10
+t1359468645
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000005107D86400000000000015F7
+t1359468644
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000005107D86500000000003596B0
+t1359468645
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000005107D8650000000000000E8D
+t1359468645
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000005107D86600000000011BCDF0
+t1359468646
+s18599408
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.h
+c00000000515BE751000000000000017A
+t1364977489
+s378
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m
+c00000000515BE751000000000000023D
+t1364977489
+s573
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.h
+c00000000515BE7510000000000001DF0
+t1364977489
+s7664
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m
+c00000000515BE751000000000001B408
+t1364977489
+s111624
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.h
+c00000000515BE75100000000000007D0
+t1364977489
+s2000
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m
+c00000000515BE7510000000000002140
+t1364977489
+s8512
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCommon.h
+c00000000515BE7510000000000000E76
+t1364977489
+s3702
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.h
+c00000000515BE7510000000000000312
+t1364977489
+s786
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m
+c00000000515BE7510000000000001105
+t1364977489
+s4357
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.h
+c00000000515BE75100000000000009E4
+t1364977489
+s2532
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m
+c00000000515BE7510000000000001CCD
+t1364977489
+s7373
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.h
+c00000000515BE7510000000000001748
+t1364977489
+s5960
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m
+c00000000515BE7510000000000004CB8
+t1364977489
+s19640
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.h
+c00000000515BE751000000000000044C
+t1364977489
+s1100
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m
+c00000000515BE7510000000000000D66
+t1364977489
+s3430
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout+Internals.h
+c00000000515BE75100000000000001F4
+t1364977489
+s500
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.h
+c00000000515BE7510000000000001B63
+t1364977489
+s7011
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m
+c00000000515BE7510000000000004541
+t1364977489
+s17729
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.h
+c00000000515BE751000000000000055E
+t1364977489
+s1374
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m
+c00000000515BE7510000000000000EE7
+t1364977489
+s3815
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.h
+c00000000515BE751000000000000049B
+t1364977489
+s1179
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m
+c00000000515BE75100000000000008C7
+t1364977489
+s2247
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.h
+c00000000515BE75100000000000001F5
+t1364977489
+s501
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m
+c00000000515BE75100000000000001DA
+t1364977489
+s474
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.h
+c00000000515BE751000000000000049C
+t1364977489
+s1180
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m
+c00000000515BE7510000000000001E53
+t1364977489
+s7763
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.h
+c00000000515BE75100000000000008E4
+t1364977489
+s2276
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m
+c00000000515BE75100000000000021C8
+t1364977489
+s8648
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/PSTCollectionView-Prefix.pch
+c00000000515BE75100000000000000F5
+t1364977489
+s245
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreGraphics/CoreGraphics.h>
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.LinkFileList
+c00000000516C0FD90000000000000995
+t1366036441
+s2453
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o
+t2
+s0
+
+N/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/libPSTCollectionView.a
+t2
+s0
+
+N/var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3160c559471cb741^18eacc59471cb741^---0#1#0#--18"Check dependencies36"18C04275-F6F5-4E31-B6D5-1AF351F2F033-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.179807
+e387729242.217356
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m77302e5a471cb741^d0b5375a471cb741^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m0000000000000000^4229"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/NSIndexPath+PSTCollectionViewAdditions.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/NSIndexPath+PSTCollectionViewAdditions.o36"93D149F9-D887-4A5D-9E17-783B7E98ED48-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025458
+e387729242.853897
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.mfcc7065a471cb741^9a98da5a471cb741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m0000000000000000^4103"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionView.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.o36"EB96A38F-FF80-4D33-BC90-AC707A24B933-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025467
+e387729242.211127
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m9fc9065a471cb741^3319365a471cb741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m0000000000000000^4127"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewCell.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewCell.o36"CDB3BFE2-B419-4711-90FC-85BFA359097C-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025491
+e387729242.170902
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m32cb065a471cb741^7bc12b5a471cb741^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m0000000000000000^4163"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewController.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewController.o36"63261489-F065-4AC0-B523-146FA739EE0C-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025484
+e387729242.184984
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m86c7065a471cb741^cf682f5a471cb741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m0000000000000000^4127"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewData.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewData.o36"0AF9E57D-A1A7-4EC0-9D02-C286F01D043F-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025527
+e387729242.365873
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m11c7065a471cb741^69a85d5a471cb741^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m0000000000000000^4163"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewFlowLayout.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewFlowLayout.o36"38584E82-230B-402A-88D9-87F07B344E61-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025629
+e387729242.117367
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m25ca065a471cb741^59181e5a471cb741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m0000000000000000^4145"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewItemKey.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewItemKey.o36"C46EB340-A3B6-4EFA-B643-B3C48E8D26FE-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025505
+e387729242.329934
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.mcdca065a471cb741^1976545a471cb741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m0000000000000000^4139"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewLayout.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewLayout.o36"B80F27E7-C016-4D3D-A92C-BDCA9EE3D9CE-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.186602
+e387729242.263371
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m26fb2f5a471cb741^c26b435a471cb741^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m0000000000000000^4163"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTCollectionViewUpdateItem.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionViewUpdateItem.o36"6F5C03CD-4482-4CC5-A0B5-4CBD0C56772C-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.025754
+e387729242.120436
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.me7c8065a471cb741^efe11e5a471cb741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m0000000000000000^4103"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutInfo.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutInfo.o36"15D554F5-808B-4B0A-B65C-16267133286D-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.119269
+e387729242.178466
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.md4b91e5a471cb741^3aaf2d5a471cb741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m0000000000000000^4103"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutItem.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutItem.o36"A1A62B27-A012-4196-8C98-41BF984F677A-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.121598
+e387729242.293263
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m734b1f5a471cb741^49134b5a471cb741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m0000000000000000^4097"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutRow.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutRow.o36"B2567C55-E0C8-457A-8DD3-AEBF3D156D4E-
+
+CCompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729242.172400
+e387729242.340778
+r1
+xCompileC
+xbuild/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Compile /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m43552c5a471cb741^9a3e575a471cb741^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m0000000000000000^4121"CompileC build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -include /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch -MMD -MT dependencies -MF /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.d --serialize-diagnostics /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/../../../PSTCollectionView/PSTGridLayoutSection.m -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTGridLayoutSection.o36"7F8410C7-44CF-433B-A462-37B7D097322C-
+
+CLibtool /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/libPSTCollectionView.a normal armv7
+s387729242.860851
+e387729242.875771
+r1
+xLibtool
+x/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/libPSTCollectionView.a
+xnormal
+xarmv7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Libtool build/Release-iphoneos/libPSTCollectionView.a normal armv7ee77dc5a471cb741^9433e05a471cb741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1158"Libtool build/Release-iphoneos/libPSTCollectionView.a normal armv7    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos -filelist /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/Objects-normal/armv7/PSTCollectionView.LinkFileList -ObjC -framework CoreGraphics -framework QuartzCore -framework UIKit -framework Foundation -o /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/libPSTCollectionView.a36"2558926F-6FE1-46D0-8AB0-53B63A253368-
+
+CProcessPCH /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth PSTCollectionView/PSTCollectionView-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387729241.805707
+e387729242.018407
+r1
+xProcessPCH
+x/var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth
+xPSTCollectionView/PSTCollectionView-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile PSTCollectionView/PSTCollectionView-Prefix.pchd368ce59471cb741^bbb5045a471cb741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/PSTCollectionView-Prefix.pch0000000000000000^3949"ProcessPCH /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth PSTCollectionView/PSTCollectionView-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-generated-files.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-own-target-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-all-target-headers.hmap -iquote /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/PSTCollectionView-project-headers.hmap -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources/armv7 -I/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/PSTCollectionView.build/Release-iphoneos/PSTCollectionView.build/DerivedSources -F/Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/build/Release-iphoneos --serialize-diagnostics /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.dia -c /Users/Jonah/Documents/GIT/PSTCollectionView/binding/PSTCollectionView/PSTCollectionView/PSTCollectionView-Prefix.pch -o /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/yk/7fb7rh_x6fb78wg2xhqy0chr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/PSTCollectionView-Prefix-ethoushouglpprcezyxzjroizsqv/PSTCollectionView-Prefix.pch.d36"B8242983-9EA5-42E8-8684-507A00EC03E2-
+

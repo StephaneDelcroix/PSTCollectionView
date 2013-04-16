@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../ApiDefinition.cs">
+    <Files>
+      <File FileName="SimpleCollectionView/SimpleCollectionViewController.cs" Line="94" Column="36" />
+      <File FileName="SimpleCollectionView/AppDelegate.cs" Line="46" Column="8" />
+      <File FileName="../../ApiDefinition.cs" Line="267" Column="56" />
+      <File FileName="../../Extra.cs" Line="50" Column="4" />
+      <File FileName="SimpleCollectionView/Main.cs" Line="17" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">

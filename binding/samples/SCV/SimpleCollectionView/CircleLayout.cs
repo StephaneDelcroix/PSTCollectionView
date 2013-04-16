@@ -20,7 +20,7 @@ namespace SimpleCollectionView
 
 		public CircleLayout ()
 		{
-			RegisterClassForDecorationView (typeof(MyDecorationView), myDecorationViewId);
+//			RegisterClassForDecorationView (typeof(MyDecorationView), myDecorationViewId);
 		}
 
 		//public override PSTCollectionViewLayoutAttributes LayoutAttributesForDecorationView (string decorationViewKind, NSIndexPath indexPath)
