@@ -26,7 +26,11 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-namespace PSTCollectionView {
+using System;
+using System.Runtime.InteropServices;
+using MonoTouch.ObjCRuntime;
+
+namespace Ios5CollectionView {
 	public enum PSTCollectionElementKindSection {
 		Header,
 		Footer,
@@ -35,6 +39,47 @@ namespace PSTCollectionView {
 	public enum PSTCollectionViewScrollDirection {
 		Vertical,
 		Horizontal,
+	}
+
+	[Flags]
+	public enum PSTCollectionViewScrollPosition : uint
+	{
+		None                 = 0,
+		
+		// The vertical positions are mutually exclusive to each other, but are bitwise or-able with the horizontal scroll positions.
+		// Combining positions from the same grouping (horizontal or vertical) will result in an NSInvalidArgumentException.
+		Top                  = 1,
+		CenteredVertically   = 2,
+		Bottom               = 4,
+		
+		// Likewise, the horizontal positions are mutually exclusive to each other.
+		Left                 = 8,
+		CenteredHorizontally = 16,
+		Right                = 32
+	}
+	
+	[Flags]
+	public enum UICollectionViewScrollPosition : uint
+	{
+		None                 = 0,
+		
+		// The vertical positions are mutually exclusive to each other, but are bitwise or-able with the horizontal scroll positions.
+		// Combining positions from the same grouping (horizontal or vertical) will result in an NSInvalidArgumentException.
+		Top                  = 1,
+		CenteredVertically   = 2,
+		Bottom               = 4,
+		
+		// Likewise, the horizontal positions are mutually exclusive to each other.
+		Left                 = 8,
+		CenteredHorizontally = 16,
+		Right                = 32
+	}
+	
+	public enum PSTCollectionViewItemType : uint
+	{
+		Cell,
+		SupplementaryView,
+		DecorationView
 	}
 }
 

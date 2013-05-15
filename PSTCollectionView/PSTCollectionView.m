@@ -26,6 +26,10 @@
 - (void)prepareToLoadData;
 @end
 
+@interface PSTCollectionViewCell (Internal)
+- (void)performSelectionSegue;
+@end
+
 @interface PSTCollectionViewUpdateItem()
 - (NSIndexPath *)indexPath;
 - (BOOL)isSectionOperation;
@@ -274,20 +278,23 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidScroll:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidScroll:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidScroll:)]) {
+        [delegate scrollViewDidScroll:scrollView];
     }
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidZoom:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidZoom:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidZoom:)]) {
+        [delegate scrollViewDidZoom:scrollView];
     }
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewWillBeginDragging:)]) {
-        [self.extVars.collectionViewDelegate scrollViewWillBeginDragging:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewWillBeginDragging:)]) {
+        [delegate scrollViewWillBeginDragging:scrollView];
     }
 }
 
@@ -295,15 +302,17 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
     // Let collectionViewLayout decide where to stop.
     *targetContentOffset = [[self collectionViewLayout] targetContentOffsetForProposedContentOffset:*targetContentOffset withScrollingVelocity:velocity];
 
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:)]) {
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewWillEndDragging:withVelocity:targetContentOffset:)]) {
         //if collectionViewDelegate implements this method, it may modify targetContentOffset as well
-        [self.extVars.collectionViewDelegate scrollViewWillEndDragging:scrollView withVelocity:velocity targetContentOffset:targetContentOffset];
+        [delegate scrollViewWillEndDragging:scrollView withVelocity:velocity targetContentOffset:targetContentOffset];
     }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidEndDragging:willDecelerate:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidEndDragging:willDecelerate:)]) {
+        [delegate scrollViewDidEndDragging:scrollView willDecelerate:decelerate];
     }
 
     // if we are in the middle of a cell touch event, perform the "touchEnded" simulation
@@ -313,52 +322,60 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 }
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewWillBeginDecelerating:)]) {
-        [self.extVars.collectionViewDelegate scrollViewWillBeginDecelerating:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewWillBeginDecelerating:)]) {
+        [delegate scrollViewWillBeginDecelerating:scrollView];
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidEndDecelerating:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
+        [delegate scrollViewDidEndDecelerating:scrollView];
     }
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidEndScrollingAnimation:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidEndScrollingAnimation:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidEndScrollingAnimation:)]) {
+        [delegate scrollViewDidEndScrollingAnimation:scrollView];
     }
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(viewForZoomingInScrollView:)]) {
-        return [self.extVars.collectionViewDelegate viewForZoomingInScrollView:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(viewForZoomingInScrollView:)]) {
+        return [delegate viewForZoomingInScrollView:scrollView];
     }
     return nil;
 }
 
 - (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewWillBeginZooming:withView:)]) {
-        [self.extVars.collectionViewDelegate scrollViewWillBeginZooming:scrollView withView:view];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewWillBeginZooming:withView:)]) {
+        [delegate scrollViewWillBeginZooming:scrollView withView:view];
     }
 }
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidEndZooming:withView:atScale:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidEndZooming:scrollView withView:view atScale:scale];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidEndZooming:withView:atScale:)]) {
+        [delegate scrollViewDidEndZooming:scrollView withView:view atScale:scale];
     }
 }
 
 - (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewShouldScrollToTop:)]) {
-        return [self.extVars.collectionViewDelegate scrollViewShouldScrollToTop:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewShouldScrollToTop:)]) {
+        return [delegate scrollViewShouldScrollToTop:scrollView];
     }
     return YES;
 }
 
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView {
-    if ([self.extVars.collectionViewDelegate respondsToSelector:@selector(scrollViewDidScrollToTop:)]) {
-        [self.extVars.collectionViewDelegate scrollViewDidScrollToTop:scrollView];
+    id<PSTCollectionViewDelegate> delegate = self.extVars.collectionViewDelegate;
+    if ((id)delegate != self && [delegate respondsToSelector:@selector(scrollViewDidScrollToTop:)]) {
+        [delegate scrollViewDidScrollToTop:scrollView];
     }
 }
 
@@ -448,8 +465,6 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 	NSString *kindAndIdentifier = [NSString stringWithFormat:@"%@/%@", elementKind, identifier];
     NSMutableArray *reusableViews = _supplementaryViewReuseQueues[kindAndIdentifier];
     PSTCollectionReusableView *view = [reusableViews lastObject];
-    PSTCollectionViewLayoutAttributes *attributes = [self.collectionViewLayout layoutAttributesForSupplementaryViewOfKind:elementKind
-                                                                                                              atIndexPath:indexPath];
     if (view) {
         [reusableViews removeObjectAtIndex:reusableViews.count - 1];
     } else {
@@ -471,16 +486,18 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 			if (viewClass == nil) {
 				@throw [NSException exceptionWithName:NSInvalidArgumentException reason:[NSString stringWithFormat:@"Class not registered for kind/identifier %@", kindAndIdentifier] userInfo:nil];
 			}
-			if (attributes) {
-					view = [[viewClass alloc] initWithFrame:attributes.frame];
-			} else {
+            if (self.collectionViewLayout) {
+                PSTCollectionViewLayoutAttributes *attributes = [self.collectionViewLayout layoutAttributesForSupplementaryViewOfKind:elementKind atIndexPath:indexPath];
+                if (attributes) {
+                    view = [[viewClass alloc] initWithFrame:attributes.frame];
+                }
+            } else {
 				view = [viewClass new];
 			}
         }
         view.collectionView = self;
         view.reuseIdentifier = identifier;
     }
-    [view applyLayoutAttributes:attributes];
 
     return view;
 }
@@ -727,7 +744,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 
     CGPoint touchPoint = [[touches anyObject] locationInView:self];
     NSIndexPath *indexPath = [self indexPathForItemAtPoint:touchPoint];
-    if (indexPath) {
+    if (indexPath && self.allowsSelection) {
         if (![self highlightItemAtIndexPath:indexPath animated:YES scrollPosition:PSTCollectionViewScrollPositionNone notifyDelegate:YES])
             return;
 
@@ -771,11 +788,11 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-
+    
     if (self.extVars.touchingIndexPath) {
         // first unhighlight the touch operation
         [self unhighlightItemAtIndexPath:self.extVars.touchingIndexPath animated:YES notifyDelegate:YES];
-
+        
         CGPoint touchPoint = [[touches anyObject] locationInView:self];
         NSIndexPath *indexPath = [self indexPathForItemAtPoint:touchPoint];
         if ([indexPath isEqual:self.extVars.touchingIndexPath]) {
@@ -817,7 +834,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
     if (self.allowsMultipleSelection && [_indexPathsForSelectedItems containsObject:indexPath]) {
         [self deselectItemAtIndexPath:indexPath animated:YES notifyDelegate:YES];
     }
-    else {
+    else if(self.allowsSelection) {
         [self selectItemAtIndexPath:indexPath animated:YES scrollPosition:PSTCollectionViewScrollPositionNone notifyDelegate:YES];
     }
 }
@@ -854,6 +871,8 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
             selectedCell.selected = YES;
 
             [_indexPathsForSelectedItems addObject:indexPath];
+
+            [selectedCell performSelectionSegue];
 
             if (scrollPosition != PSTCollectionViewScrollPositionNone) {
                 [self scrollToItemAtIndexPath:indexPath atScrollPosition:scrollPosition animated:animated];
@@ -923,29 +942,35 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 }
 
 - (BOOL)unhighlightItemAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated notifyDelegate:(BOOL)notifyDelegate shouldCheckHighlight:(BOOL)check {
+    
+    bool isHighlited = NO;
     if ([_indexPathsForHighlightedItems containsObject:indexPath]) {
-        PSTCollectionViewCell *highlightedCell = [self cellForItemAtIndexPath:indexPath];
+        isHighlited = YES;
+    }
+    
+    for (NSIndexPath *ind in [_indexPathsForHighlightedItems copy]) {
+        PSTCollectionViewCell *highlightedCell = [self cellForItemAtIndexPath:ind];
         // iOS6 does not notify any delegate if the cell was never highlighted (setHighlighted overwritten) during touchMoved
         if (check && !highlightedCell.highlighted) {
             return NO;
         }
 
         // if multiple selection or not unhighlighting a selected item we don't perform any op
-        if (highlightedCell.highlighted && [_indexPathsForSelectedItems containsObject:indexPath]) {
+        if (highlightedCell.highlighted && [_indexPathsForSelectedItems containsObject:ind]) {
             highlightedCell.highlighted = YES;
         } else {
             highlightedCell.highlighted = NO;
         }
 
-        [_indexPathsForHighlightedItems removeObject:indexPath];
+
+        [_indexPathsForHighlightedItems removeObject:ind];
 
         if (notifyDelegate && _collectionViewFlags.delegateDidUnhighlightItemAtIndexPath) {
-            [self.delegate collectionView:self didUnhighlightItemAtIndexPath:indexPath];
-        }
-
-        return YES;
+            [self.delegate collectionView:self didUnhighlightItemAtIndexPath:ind];
+        }        
     }
-    return NO;
+
+    return isHighlited;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -1018,7 +1043,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
     if (backgroundView != _backgroundView) {
         [_backgroundView removeFromSuperview];
         _backgroundView = backgroundView;
-        backgroundView.frame = (CGRect){.origin=self.contentOffset,.size=self.bounds.size};
+//        backgroundView.frame = (CGRect){.origin=self.contentOffset,.size=backgroundView.frame.size};
         backgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         [self addSubview:backgroundView];
         [self sendSubviewToBack:backgroundView];
@@ -1448,6 +1473,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 		PSTCollectionReusableView *view = [self.dataSource collectionView:self
 										viewForSupplementaryElementOfKind:kind
 															  atIndexPath:indexPath];
+        [view applyLayoutAttributes:layoutAttributes];
 		return view;
 	}
 	return nil;
@@ -1582,7 +1608,33 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
                                           [NSMutableArray array], @(PSTCollectionViewItemTypeSupplementaryView),nil];
     
     for (PSTCollectionViewUpdateItem *updateItem in items) {
-        if (updateItem.isSectionOperation) continue;
+        if (updateItem.isSectionOperation && updateItem.updateAction != PSTCollectionUpdateActionDelete) continue;
+        if (updateItem.isSectionOperation && updateItem.updateAction == PSTCollectionUpdateActionDelete) {
+            NSInteger numberOfBeforeSection = [self numberOfItemsInSection:updateItem.indexPathBeforeUpdate.section];
+            for (NSInteger i = 0; i < numberOfBeforeSection; i++) {
+                NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:updateItem.indexPathBeforeUpdate.section];
+                
+                PSTCollectionViewLayoutAttributes *finalAttrs = [_layout finalLayoutAttributesForDisappearingItemAtIndexPath:indexPath];
+                PSTCollectionViewItemKey *key = [PSTCollectionViewItemKey collectionItemKeyForCellWithIndexPath:indexPath];
+                PSTCollectionReusableView *view = _allVisibleViewsDict[key];
+                if (view) {
+                    PSTCollectionViewLayoutAttributes *startAttrs = view.layoutAttributes;
+                    
+                    if (!finalAttrs) {
+                        finalAttrs = [startAttrs copy];
+                        finalAttrs.alpha = 0;
+                    }
+                    [animations addObject:@{@"view": view, @"previousLayoutInfos": startAttrs, @"newLayoutInfos": finalAttrs}];
+                    
+                    [_allVisibleViewsDict removeObjectForKey:key];
+                    
+                    [viewsToRemove[@(key.type)] addObject:view];
+                    
+                }
+            }
+            continue;
+        }
+
 
         if (updateItem.updateAction == PSTCollectionUpdateActionDelete) {
             NSIndexPath *indexPath = updateItem.indexPathBeforeUpdate;
@@ -1868,7 +1920,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
                      deleteItem.indexPathBeforeUpdate.section);
 
             for(PSTCollectionViewUpdateItem *moveItem in sortedMutableMoveItems) {
-                NSAssert([deleteItem.indexPathBeforeUpdate isEqual:moveItem.indexPathBeforeUpdate],
+                NSAssert(![deleteItem.indexPathBeforeUpdate isEqual:moveItem.indexPathBeforeUpdate],
                          @"attempt to delete and move the same item (%@)", deleteItem.indexPathBeforeUpdate);
             }
 
@@ -1983,7 +2035,7 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
 
         NSAssert([oldCollectionViewData numberOfItemsInSection:section]+insertedCount-deletedCount+movedInCount-movedOutCount ==
                  [_collectionViewData numberOfItemsInSection:section],
-                 @"invalide update in section %d: number of items after update (%d) should be equal to the number of items before update (%d) "\
+                 @"invalid update in section %d: number of items after update (%d) should be equal to the number of items before update (%d) "\
                  "plus count of inserted items (%d), minus count of deleted items (%d), plus count of items moved in (%d), minus count of items moved out (%d)",
                  section,
                  [_collectionViewData numberOfItemsInSection:section],
@@ -2040,8 +2092,9 @@ static void PSTCollectionViewCommonSetup(PSTCollectionView *_self) {
                     [newModel insertObject:section atIndex:updateItem.indexPathAfterUpdate.section];
                 }
                 else {
-                    id object = newModel[updateItem.indexPathBeforeUpdate.section][updateItem.indexPathBeforeUpdate.item];
-                    [newModel[updateItem.indexPathBeforeUpdate.section] removeObjectAtIndex:updateItem.indexPathBeforeUpdate.item];
+                    NSUInteger originalIndex = [newModel[updateItem.indexPathBeforeUpdate.section] indexOfObject:@(updateItem.indexPathBeforeUpdate.item)];
+                    id object = newModel[updateItem.indexPathBeforeUpdate.section][originalIndex];
+                    [newModel[updateItem.indexPathBeforeUpdate.section] removeObjectAtIndex:originalIndex];
                     [newModel[updateItem.indexPathAfterUpdate.section] insertObject:object
                                                                             atIndex:updateItem.indexPathAfterUpdate.item];
                 }
@@ -2249,16 +2302,3 @@ __attribute__((constructor)) static void PSTCheckIfIVarLayoutIsEqualSize(void) {
     }
 }
 #endif
-
-@implementation NSDictionary(PSSubscriptingSupport)
-	- (id)objectForKeyedSubscript:(id)key {return [self objectForKey:key];}
-@end
-@implementation NSMutableDictionary(PSSubscriptingSupport)
-	- (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key {[self setObject:obj forKey:key];}
-@end
-@implementation NSArray(PSSubscriptingSupport)
-	- (id)objectAtIndexedSubscript:(NSUInteger)idx {return [self objectAtIndex:idx];}
-@end
-@implementation NSMutableArray(PSSubscriptingSupport)
-	- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx {[self replaceObjectAtIndex:idx withObject:obj];}
-@end

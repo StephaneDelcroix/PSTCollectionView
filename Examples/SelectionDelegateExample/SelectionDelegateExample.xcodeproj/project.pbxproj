@@ -64,6 +64,7 @@
 		60FF9C571648B8D800E20CD4 /* 9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 60FF9C371648B8D800E20CD4 /* 9.JPG */; };
 		60FF9C7D1648BE6100E20CD4 /* ImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF9C7C1648BE6100E20CD4 /* ImageGridCell.m */; };
 		78E7A75F1654EECE000C70BE /* PSTCollectionViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7A75E1654EECE000C70BE /* PSTCollectionViewUpdateItem.m */; };
+		8C61FA2F173A656F00498CA4 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C61FA2E173A656F00498CA4 /* TestCell.xib */; };
 		981FA1F116C79C1D00F6149A /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 981FA1F016C79C1D00F6149A /* NSIndexPath+PSTCollectionViewAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		60FF9C7C1648BE6100E20CD4 /* ImageGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridCell.m; sourceTree = "<group>"; };
 		78E7A75D1654EECE000C70BE /* PSTCollectionViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewUpdateItem.h; sourceTree = "<group>"; };
 		78E7A75E1654EECE000C70BE /* PSTCollectionViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewUpdateItem.m; sourceTree = "<group>"; };
+		8C61FA2E173A656F00498CA4 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		981FA1EF16C79C1D00F6149A /* NSIndexPath+PSTCollectionViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+PSTCollectionViewAdditions.h"; sourceTree = "<group>"; };
 		981FA1F016C79C1D00F6149A /* NSIndexPath+PSTCollectionViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+PSTCollectionViewAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 				60FF9BF11648B87000E20CD4 /* PSTCollectionView */,
 				60FF9C161648B8D000E20CD4 /* Images */,
 				60FF9BD51648B86200E20CD4 /* Supporting Files */,
+				8C61FA2E173A656F00498CA4 /* TestCell.xib */,
 			);
 			path = SelectionDelegateExample;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				60FF9C551648B8D800E20CD4 /* 7.JPG in Resources */,
 				60FF9C561648B8D800E20CD4 /* 8.JPG in Resources */,
 				60FF9C571648B8D800E20CD4 /* 9.JPG in Resources */,
+				8C61FA2F173A656F00498CA4 /* TestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

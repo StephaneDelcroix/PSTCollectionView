@@ -28,11 +28,12 @@
 
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
+using MonoTouch.UIKit;
 
 using System;
 using System.Drawing;
 
-namespace PSTCollectionView {
+namespace Ios5CollectionView {
 	public partial class PSUICollectionViewController {
 		PSUICollectionViewController (PSTCollectionViewLayout layout) : base (layout) {
 		}
@@ -56,11 +57,27 @@ namespace PSTCollectionView {
 			{
 				if (section != PSTCollectionElementKindSection.Footer)
 					throw new ArgumentOutOfRangeException ("section");
-				kind = PSTCollectionElementKindSectionKey.Footer;
+				kind = "UICollectionElementKindSectionFooter";
 			}
 			else
-				kind = PSTCollectionElementKindSectionKey.Header;
+				kind = "UICollectionElementKindSectionHeader";
+
 			this.RegisterClassForSupplementaryView (Class.GetHandle (cellType), kind, reuseIdentifier);
+		}
+
+		public void RegisterNib (UINib nib, PSTCollectionElementKindSection section, string reuseIdentifier)
+		{
+			string kind;
+			if (section != PSTCollectionElementKindSection.Header)
+			{
+				if (section != PSTCollectionElementKindSection.Footer)
+					throw new ArgumentOutOfRangeException ("section");
+				kind = "UICollectionElementKindSectionFooter";
+			}
+			else
+				kind = "UICollectionElementKindSectionHeader";
+
+			this.RegisterNib (nib, kind, reuseIdentifier);
 		}
 	}
 

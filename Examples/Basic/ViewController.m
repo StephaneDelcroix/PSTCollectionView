@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "Cell.h"
 
-#define kPSTEnableFastAnimationTest
+//#define kPSTEnableFastAnimationTest
 
 @interface ViewController ()
 @property (atomic, readwrite, assign) NSInteger cellCount;

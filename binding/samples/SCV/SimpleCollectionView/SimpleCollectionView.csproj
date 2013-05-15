@@ -85,9 +85,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="PSTCollectionView">
-      <HintPath>..\..\..\PSTCollectionView.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -100,10 +97,20 @@
     <Compile Include="Monkey.cs" />
     <Compile Include="SimpleCollectionViewController.cs" />
     <Compile Include="LineLayout.cs" />
+    <Compile Include="NormalViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Content Include="monkey.png" />
     <Content Include="placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Test.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\Projects\iOS5PSTCollectionView\iOS5PSTCollectionView\iOS5PSTCollectionView.csproj">
+      <Project>{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}</Project>
+      <Name>iOS5PSTCollectionView</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

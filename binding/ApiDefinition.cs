@@ -35,7 +35,7 @@ using MonoTouch.UIKit;
 using MonoTouch.CoreGraphics;
 using MonoTouch.CoreAnimation;
 
-namespace PSTCollectionView {
+namespace Ios5CollectionView {
 	[BaseType (typeof (PSTCollectionViewLayout))]
 	interface PSTCollectionViewFlowLayout {
 		[Export ("minimumLineSpacing")]
@@ -155,7 +155,7 @@ namespace PSTCollectionView {
 		UIView BackgroundView { get; set; }
 
 		[Export ("registerClass:forCellWithReuseIdentifier:")]
-		//[Internal]
+		[Internal]
 		void RegisterClassForCell (IntPtr cellClass, string reuseIdentifier);
 
 		[Export ("registerNib:forCellWithReuseIdentifier:")]
@@ -164,6 +164,10 @@ namespace PSTCollectionView {
 		[Export ("registerClass:forSupplementaryViewOfKind:withReuseIdentifier:")]
 		[Internal]
 		void RegisterClassForSupplementaryView (IntPtr viewClass, string kind, string reuseIdentifier);
+		
+		[Export ("registerNib:forSupplementaryViewOfKind:withReuseIdentifier:")]
+		[Internal]
+		void RegisterNib (UINib nib, string kind, string reuseIdentifier);
 
 		[Wrap ("WeakDataSource")]
 		PSTCollectionViewDataSource DataSource { get; set; }
@@ -182,7 +186,6 @@ namespace PSTCollectionView {
 		[NullAllowed]
 		NSObject WeakDelegate { get; set; }
 
-
 		[Export ("dequeueReusableCellWithReuseIdentifier:forIndexPath:")]
 		NSObject DequeueReusableCell (string reuseIdentifier, NSIndexPath indexPath);
 
@@ -197,7 +200,18 @@ namespace PSTCollectionView {
 
 		[Export ("numberOfItemsInSection:")]
 		int NumberOfItemsInSection (int section);
-		
+
+		[Export ("selectItemAtIndexPath:animated:scrollPosition:")]
+		void SelectItemAtIndexPath (NSIndexPath indexPath, bool animated, PSTCollectionViewScrollPosition scrollPosition);
+
+		[Export ("reloadItemsAtIndexPaths:")]
+		void ReloadItems (NSIndexPath[] indexPath);
+
+		[Export ("allowsSelection")]
+		bool AllowsSelection {get; set;}
+
+		[Export ("allowsMultipleSelection")]
+		bool AllowsMultipleSelection {get; set;}
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -214,6 +228,8 @@ namespace PSTCollectionView {
 		[Export ("numberOfSectionsInCollectionView:")]
 		int NumberOfSections (PSTCollectionView collectionView);
 
+		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
+		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath);
 	}
 
 	[BaseType (typeof (PSTCollectionViewDelegate))]
@@ -227,8 +243,6 @@ namespace PSTCollectionView {
 
 		[Export ("collectionView:layout:minimumLineSpacingForSectionAtIndex:")]
 		float GetMinimumLineSpacingForSection (UICollectionView collectionView, UICollectionViewLayout layout, int section);
-		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
-		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath);
 	}
 		
 	[BaseType (typeof (NSObject))]
@@ -302,6 +316,18 @@ namespace PSTCollectionView {
 	//	[Export ("collectionView:layout:minimumLineSpacingForSectionAtIndex:")]
 	//	float GetMinimumLineSpacingForSection (PSTCollectionView collectionView, PSTCollectionViewLayout layout, int section);
 
+		[Export ("collectionView:shouldSelectItemAtIndexPath:")]
+		bool ItemShouldSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+		
+		[Export ("collectionView:shouldDeselectItemAtIndexPath:")]
+		bool ItemShouldDeselectSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+		
+		[Export ("collectionView:didSelectItemAtIndexPath:")]
+		void ItemSelected (PSTCollectionView collectionView, NSIndexPath indexPath);
+		
+		[Export ("collectionView:didDeselectItemAtIndexPath:")]
+		void ItemDeselected (PSTCollectionView collectionView, NSIndexPath indexPath);
+
 		[Export ("collectionView:viewForSupplementaryElementOfKind:atIndexPath:")]
 		PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath);
 		
@@ -331,7 +357,7 @@ namespace PSTCollectionView {
 	[BaseType (typeof (UIView))]
 	interface PSTCollectionReusableView {
 		[Export ("reuseIdentifier")]
-		string ReuseIdentifier { get; set; }
+		string ReuseIdentifier { get; }
 
 		[Export ("prepareForReuse")]
 		void PrepareForReuse ();
@@ -352,10 +378,22 @@ namespace PSTCollectionView {
 		UIView ContentView { get; }
 
 		[Export ("isSelected")]
-		bool IsSelected { get;[Bind ("setSelected:")] set; }
-
+		bool IsSelected { [Bind ("isSelected")] get;[Bind ("setSelected:")] set; }
+		
 		[Export ("isHighlighted")]
-		bool IsHighlighted { get; [Bind ("setHighlighted:")]set; }
+		bool IsHighlighted { [Bind ("isHighlighted")] get; [Bind ("setHighlighted:")]set; }
+
+//		[Export ("isSelected")]
+//		bool IsSelected { [Bind ("IsSelected")] get;[Bind ("setSelected:")] set; }
+//
+//		[Export ("isHighlighted")]
+//		bool IsHighlighted { [Bind ("IsHighlighted")] get; [Bind ("setHighlighted:")]set; }
+
+//		[Export ("selected")]
+//		bool IsSelected { [Bind ("isSelected")] get; set; }
+//		
+//		[Export ("highlighted")]
+//		bool IsHighlighted { [Bind ("isHighlighted")] get; set; }
 
 		[Export ("backgroundView")]
 		UIView BackgroundView { get; set; }

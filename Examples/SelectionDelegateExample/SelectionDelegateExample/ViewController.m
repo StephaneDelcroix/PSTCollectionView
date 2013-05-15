@@ -9,11 +9,11 @@
 #import "ViewController.h"
 #import "ImageGridCell.h"
 
-CGSize CollectionViewCellSize = { .height = 140, .width = 180 };
+CGSize CollectionViewCellSize = { .height = 200, .width = 245 };
 NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
 
 @interface ViewController (){
-    PSUICollectionView *_gridView;
+    PSTCollectionView *_gridView;
 }
 @end
 
@@ -24,7 +24,11 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     [self createGridView];
 
     UIBarButtonItem *toggleMultiSelectButton = [[UIBarButtonItem alloc] initWithTitle:@"Multi-Select" style:UIBarButtonItemStylePlain target:self action:@selector(toggleAllowsMultipleSelection:)];
-    [self.navigationItem setRightBarButtonItem:toggleMultiSelectButton];
+    UIBarButtonItem *refreshCustomCell = [[UIBarButtonItem alloc] initWithTitle:@"Refresh cell" style:UIBarButtonItemStylePlain target:self action:@selector(refreshCell:)];
+    NSArray* buttons = [[NSArray alloc] initWithObjects:toggleMultiSelectButton, refreshCustomCell, nil];
+    
+    [self.navigationItem setRightBarButtonItems:buttons];
+//    [self.navigationItem setRightBarButtonItem:toggleMultiSelectButton];
 }
 
 - (void)createGridView {
@@ -35,6 +39,8 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     _gridView.dataSource = self;
     _gridView.backgroundColor = [UIColor colorWithRed:0.135 green:0.341 blue:0.000 alpha:1.000];
     [_gridView registerClass:[ImageGridCell class] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
+    
+//    [_gridView registerNib:[UINib nibWithNibName:@"TestCell" bundle:nil] forCellWithReuseIdentifier:CollectionViewCellIdentifier];
 
     [self.view addSubview:_gridView];
 }
@@ -44,6 +50,10 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     item.title = _gridView.allowsMultipleSelection ? @"Single-Select" : @"Multi-Select";
 }
 
+- (void)refreshCell:(UIBarButtonItem *)item {
+    [_gridView reloadItemsAtIndexPaths:[[NSArray alloc] initWithObjects:[NSIndexPath indexPathForRow:2 inSection:0], nil]];
+}
+
 #pragma mark -
 #pragma mark Collection View Data Source
 
@@ -51,7 +61,9 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     return [NSString stringWithFormat:@"{%ld,%ld}", (long)indexPath.row, (long)indexPath.section];
 }
 
-- (PSUICollectionViewCell *)collectionView:(PSUICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (PSTCollectionViewCell *)collectionView:(PSTCollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    PSUICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
+
     ImageGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
     cell.label.text = [self formatIndexPath:indexPath];
 
@@ -61,11 +73,11 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     return cell;
 }
 
-- (CGSize)collectionView:(PSUICollectionView *)collectionView layout:(PSUICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (CGSize)collectionView:(PSUICollectionView *)collectionView layout:(PSTCollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CollectionViewCellSize;
 }
 
-- (NSInteger)collectionView:(PSUICollectionView *)view numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)collectionView:(PSTCollectionView *)view numberOfItemsInSection:(NSInteger)section {
     return 32;
 }
 

@@ -1,19 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../ApiDefinition.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.JoPad 4G" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleCollectionView/CircleLayout.cs">
     <Files>
-      <File FileName="SimpleCollectionView/SimpleCollectionViewController.cs" Line="94" Column="36" />
-      <File FileName="SimpleCollectionView/AppDelegate.cs" Line="46" Column="8" />
-      <File FileName="../../ApiDefinition.cs" Line="267" Column="56" />
-      <File FileName="../../Extra.cs" Line="50" Column="4" />
-      <File FileName="SimpleCollectionView/Main.cs" Line="17" Column="1" />
+      <File FileName="SimpleCollectionView/SimpleCollectionViewController.cs" Line="1" Column="1" />
+      <File FileName="SimpleCollectionView/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="../../ApiDefinition.cs" Line="1" Column="1" />
+      <File FileName="../../Extra.cs" Line="64" Column="1" />
+      <File FileName="SimpleCollectionView/NormalViewController.cs" Line="1" Column="1" />
+      <File FileName="../../StructsAndEnums.cs" Line="1" Column="1" />
+      <File FileName="SimpleCollectionView/CircleLayout.cs" Line="54" Column="53" />
+      <File FileName="SimpleCollectionView/LineLayout.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
+          <Node name="iOS5PSTCollectionView" expanded="True" />
           <Node name="SimpleCollectionView" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="SimpleCollectionViewController.cs" selected="True" />
+            <Node name="CircleLayout.cs" selected="True" />
           </Node>
         </State>
       </Pad>
