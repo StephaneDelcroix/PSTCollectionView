@@ -68,7 +68,8 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
     cell.label.text = [self formatIndexPath:indexPath];
 
     // load the image for this cell
-    NSString *imageToLoad = [NSString stringWithFormat:@"%d.JPG", indexPath.row];
+    int position = (arc4random() % 30) + 1;
+    NSString *imageToLoad = [NSString stringWithFormat:@"%d.JPG", position];
     cell.image.image = [UIImage imageNamed:imageToLoad];
     return cell;
 }
@@ -78,7 +79,7 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
 }
 
 - (NSInteger)collectionView:(PSTCollectionView *)view numberOfItemsInSection:(NSInteger)section {
-    return 32;
+    return 3555;
 }
 
 #pragma mark -
@@ -86,39 +87,39 @@ NSString *CollectionViewCellIdentifier = @"SelectionDelegateExample";
 
 - (void)collectionView:(PSTCollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %@ : HIGHLIGHTED", [self formatIndexPath:indexPath]);
+//    NSLog(@"Delegate cell %@ : HIGHLIGHTED", [self formatIndexPath:indexPath]);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %@ : UNHIGHLIGHTED", [self formatIndexPath:indexPath]);
+//    NSLog(@"Delegate cell %@ : UNHIGHLIGHTED", [self formatIndexPath:indexPath]);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %@ : SELECTED", [self formatIndexPath:indexPath]);
+//    NSLog(@"Delegate cell %@ : SELECTED", [self formatIndexPath:indexPath]);
 }
 
 - (void)collectionView:(PSTCollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Delegate cell %@ : DESELECTED", [self formatIndexPath:indexPath]);
+//    NSLog(@"Delegate cell %@ : DESELECTED", [self formatIndexPath:indexPath]);
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %@ highlight?", [self formatIndexPath:indexPath]);
+//    NSLog(@"Check delegate: should cell %@ highlight?", [self formatIndexPath:indexPath]);
     return YES;
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %@ be selected?", [self formatIndexPath:indexPath]);
+//    NSLog(@"Check delegate: should cell %@ be selected?", [self formatIndexPath:indexPath]);
     return YES;
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Check delegate: should cell %@ be deselected?", [self formatIndexPath:indexPath]);
+//    NSLog(@"Check delegate: should cell %@ be deselected?", [self formatIndexPath:indexPath]);
     return YES;
 }
 

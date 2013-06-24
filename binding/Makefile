@@ -6,7 +6,7 @@ SMCS=/Developer/MonoTouch/usr/bin/smcs
 TARGET=PSTCollectionView
 CONFIGURATION=Release
 
-all: lib$(TARGET).a
+all: clean-all lib$(TARGET).a
 
 debug: CONFIGURATION = Debug
 debug: all
@@ -23,7 +23,7 @@ lib$(TARGET)-armv7.a: $(PROJECT)
 #	$(XBUILD) -project $(PROJECT) -target $(TARGET) -sdk iphoneos -arch armv7s -configuration $(CONFIGURATION) clean build
 #	-mv $(PROJECT_ROOT)/build/$(CONFIGURATION)-iphoneos/lib$(TARGET).a $@
 
-lib$(TARGET).a: lib$(TARGET)-i386.a lib$(TARGET)-armv7.a #lib$(TARGET)-armv7s.a
+lib$(TARGET).a:  lib$(TARGET)-i386.a lib$(TARGET)-armv7.a #lib$(TARGET)-armv7s.a
 	lipo -create -output $@ $^
 
 #PSTCollectionView.dll: ApiDefinition.cs StructsAndEnums.cs Extra.cs AssemblyInfo.cs libarclite.a libarclite.linkwith.cs lib$(TARGET).a
