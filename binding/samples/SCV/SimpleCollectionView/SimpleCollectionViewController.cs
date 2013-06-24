@@ -4,14 +4,14 @@ using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using MonoTouch.CoreGraphics;
 
-using PSTCollectionView;
+using Ios5CollectionView;
 
 namespace SimpleCollectionView
 {
 	public class SimpleCollectionViewController : PSTCollectionViewController
 	{
-		static NSString animalCellId = new NSString ("AnimalCell");
-		static NSString headerId = new NSString ("Header");																			
+		static string animalCellId = "AnimalCell";
+		static string headerId = "Header";	
 
 		List<IAnimal> animals;
 
@@ -35,19 +35,20 @@ namespace SimpleCollectionView
 			CollectionView.BackgroundColor = UIColor.ScrollViewTexturedBackgroundColor;
 		}
 
-		public override int NumberOfSections (PSTCollectionView.PSTCollectionView collectionView)
+		public override int NumberOfSections (PSTCollectionView collectionView)
 		{
 			return 1;
 		}
 
-		public override int GetItemsCount (PSTCollectionView.PSTCollectionView collectionView, int section)
+		public override int GetItemsCount (PSTCollectionView collectionView, int section)
 		{
 			return animals.Count;
 		}
 
-		public override PSTCollectionViewCell GetCell (PSTCollectionView.PSTCollectionView collectionView, MonoTouch.Foundation.NSIndexPath indexPath)
+		public override PSTCollectionViewCell GetCell (PSTCollectionView collectionView, MonoTouch.Foundation.NSIndexPath indexPath)
 		{
 			var animalCell = (AnimalCell)collectionView.DequeueReusableCell (animalCellId, indexPath);
+			animalCell.SelectedBackgroundView = new UIView {Frame = animalCell.Frame};
 
 			var animal = animals [indexPath.Row];
 
@@ -56,26 +57,26 @@ namespace SimpleCollectionView
 			return animalCell;
 		}
 
-		public override PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView.PSTCollectionView collectionView, NSString elementKind, NSIndexPath indexPath)
+		public override PSTCollectionReusableView GetViewForSupplementaryElement (PSTCollectionView collectionView, string elementKind, NSIndexPath indexPath)
 		{
 			var headerView = (Header)collectionView.DequeueReusableSupplementaryView (elementKind, headerId, indexPath);
 			headerView.Text = "This is a Supplementary View";
 			return headerView;
 		}
 
-		public override void ItemHighlighted (PSTCollectionView.PSTCollectionView collectionView, NSIndexPath indexPath)
+		public override void ItemHighlighted (PSTCollectionView collectionView, NSIndexPath indexPath)
 		{
 			var cell = collectionView.CellForItem(indexPath);
 			cell.ContentView.BackgroundColor = UIColor.Yellow;
 		}
 
-		public override void ItemUnhighlighted (PSTCollectionView.PSTCollectionView collectionView, NSIndexPath indexPath)
+		public override void ItemUnhighlighted (PSTCollectionView collectionView, NSIndexPath indexPath)
 		{
 			var cell = collectionView.CellForItem(indexPath);
 			cell.ContentView.BackgroundColor = UIColor.White;
 		}
 
-		public override bool ShouldHighlightItem (PSTCollectionView.PSTCollectionView collectionView, NSIndexPath indexPath)
+		public override bool ShouldHighlightItem (PSTCollectionView collectionView, NSIndexPath indexPath)
 		{
 			return true;
 		}
@@ -86,18 +87,18 @@ namespace SimpleCollectionView
 //		}
 
 		// for edit menu
-		public override bool ShouldShowMenu (PSTCollectionView.PSTCollectionView collectionView, NSIndexPath indexPath)
+		public override bool ShouldShowMenu (PSTCollectionView collectionView, NSIndexPath indexPath)
 		{
 			return true;
 		}
 
-		public override bool CanPerformAction (PSTCollectionView.PSTCollectionView collectionView, MonoTouch.ObjCRuntime.Selector action, NSIndexPath indexPath, NSObject sender)
+		public override bool CanPerformAction (PSTCollectionView collectionView, MonoTouch.ObjCRuntime.Selector action, NSIndexPath indexPath, NSObject sender)
 		{
 			return true;
 		}
 
 
-		public override void PerformAction (PSTCollectionView.PSTCollectionView collectionView, MonoTouch.ObjCRuntime.Selector action, NSIndexPath indexPath, NSObject sender)
+		public override void PerformAction (PSTCollectionView collectionView, MonoTouch.ObjCRuntime.Selector action, NSIndexPath indexPath, NSObject sender)
 		{
 			Console.WriteLine ("code to perform action");
 		}

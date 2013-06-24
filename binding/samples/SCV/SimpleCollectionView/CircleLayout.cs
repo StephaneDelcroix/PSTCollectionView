@@ -5,7 +5,7 @@ using MonoTouch.Foundation;
 using MonoTouch.CoreAnimation;
 using MonoTouch.UIKit;
 
-using PSTCollectionView;
+using Ios5CollectionView;
 
 namespace SimpleCollectionView
 {
@@ -16,11 +16,11 @@ namespace SimpleCollectionView
 		float radius;
 		PointF center;
 
-		static NSString myDecorationViewId = new NSString ("MyDecorationView");
+		static string myDecorationViewId = "MyDecorationView";
 
 		public CircleLayout ()
 		{
-			RegisterClassForDecorationView (typeof(MyDecorationView), myDecorationViewId);
+//			RegisterClassForDecorationView (typeof(MyDecorationView), myDecorationViewId);
 		}
 
 		//public override PSTCollectionViewLayoutAttributes LayoutAttributesForDecorationView (string decorationViewKind, NSIndexPath indexPath)

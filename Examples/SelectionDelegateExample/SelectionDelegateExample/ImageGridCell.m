@@ -16,7 +16,8 @@ static CGFloat SubTitleLabelHeight = 24;
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         UIView *background = [[UIView alloc] init];
-        background.backgroundColor = [UIColor colorWithRed:0.109 green:0.419 blue:0.000 alpha:1.000];
+//        background.backgroundColor = [UIColor colorWithRed:0.109 green:0.419 blue:0.000 alpha:1.000];
+        background.backgroundColor = [UIColor redColor];
         self.selectedBackgroundView = background;
 
         _image = [[UIImageView alloc] init];
@@ -42,7 +43,7 @@ static CGFloat SubTitleLabelHeight = 24;
 }
 
 - (void)setHighlighted:(BOOL)highlighted {
-    NSLog(@"Cell %@ highlight: %@", _label.text, highlighted ? @"ON" : @"OFF");
+//    NSLog(@"Cell %@ highlight: %@", _label.text, highlighted ? @"ON" : @"OFF");
     if (highlighted) {
         _label.backgroundColor = [UIColor yellowColor];
     }
@@ -50,5 +51,6 @@ static CGFloat SubTitleLabelHeight = 24;
         _label.backgroundColor = [UIColor underPageBackgroundColor];
     }
 }
+
 
 @end

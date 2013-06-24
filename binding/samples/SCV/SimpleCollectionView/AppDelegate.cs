@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-using PSTCollectionView;
+using Ios5CollectionView;
 
 namespace SimpleCollectionView
 {

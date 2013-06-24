@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCollectionView", "SimpleCollectionView\SimpleCollectionView.csproj", "{384451B5-3210-4F89-B5DF-4822101D265D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOS5PSTCollectionView", "..\..\..\..\..\..\Projects\iOS5PSTCollectionView\iOS5PSTCollectionView\iOS5PSTCollectionView.csproj", "{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -25,6 +27,18 @@ Global
 		{384451B5-3210-4F89-B5DF-4822101D265D}.Release|iPhone.Build.0 = Release|iPhone
 		{384451B5-3210-4F89-B5DF-4822101D265D}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{384451B5-3210-4F89-B5DF-4822101D265D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Release|iPhone.Build.0 = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{ECFF4C2C-1E7B-4510-9D36-B2216BAEEF8A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = SimpleCollectionView\SimpleCollectionView.csproj

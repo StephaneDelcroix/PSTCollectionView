@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad.5.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../Projects/iOS5PSTCollectionView/iOS5PSTCollectionView/ApiDefinition.cs">
+    <Files>
+      <File FileName="../../../../../../Projects/iOS5PSTCollectionView/iOS5PSTCollectionView/ApiDefinition.cs" Line="204" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="iOS5PSTCollectionView" expanded="True">
+            <Node name="ApiDefinition.cs" selected="True" />
+          </Node>
+          <Node name="SimpleCollectionView" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>cellType</Value>
+        </State>
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SimpleCollectionView>
+    <IPhoneSimulatorTarget-Debug_27CiPhoneSimulator Device="IPad" SdkVersion="5.0" />
+  </MonoDevelop.Ide.ItemProperties.SimpleCollectionView>
+</Properties>
